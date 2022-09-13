@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<title>Members-page</title>
+<style>
+    body {
+        font-family: Georgia, serif;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        width: 99%;
+        height: 100%;
+    }
+
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        float: right;
+        top: 0;
+        left: 0;
+        width: 60%;
+        margin-right: 0%;
+        padding-top: 5px;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+        z-index: 10;
+    }
+
+    li:hover {
+        background-color: #ff6f0f;
+        color: #181719;
+    }
+
+    .nav-list {
+
+        display: flex;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden;   */
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-style: bold;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .bar {
+        flex: 60%;
+        background-color: rgb(0, 7, 7);
+        width: 60%;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+        z-index: 10;
+        float: right;
+    }
+
+    .logo {
+        flex: 40%;
+        padding-left: 4%;
+        background-color: rgb(0, 7, 7);
+        width: 35%;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+        z-index: 10;
+        /* float: right;  */
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .gap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 100px; */
+    }
+
+    .member-page
+    {
+        display: flex;
+    }
+
+    .info-page
+    {
+        flex:100%;
+        align-items: center;
+    }
+    .background-image {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: block;
+        background-image: url('bb1.jpg');
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
+
+    .content {
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        background-color: rgba(0, 29, 35, 0.8);
+    }
+
+    
+    /* Style the tab */
+    .tab {
+        flex:25%;
+        /* float: left; */
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        /* width: 24%; */
+        height: 254px;
+        background-color: rgba(0, 29, 35, 0.8);
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: white;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #b2754c;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        background-color: #ff6f0f;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        /* background: linear-gradient(0deg, rgba(34,193,195,1) 14%, rgba(191,153,77,1) 36%, rgba(217,177,91,1) 60%, rgba(28,194,103,1) 84%);text-align: center; */
+        /* float: left; */
+        /* padding: 0px 12px; */
+        border: 2px solid #ccc;
+        /* width: 75%; */
+        border-left: none;
+        height: 1600px;
+        background-color: rgba(0, 29, 35, 0.8);
+    }
+
+    .tabcontent img {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: auto;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+
+    .tabcontent .resume {
+        padding-left: 12.5%;
+    }
+
+    .resume {
+        margin-left: 8%;
+        height: 1200px;
+        width: 850px;
+    }
+
+    .info {
+        margin: auto;
+        padding-left: 40%;
+        color: #ffffff;
+    }
+
+    .info p a {
+        color: #ff6f0f;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+    }
+</style>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="content">
+        <div class="header">
+            <div class="logo">
+            <a href="index.html" style="color:#000000">
+                <h1 style="font-size:x-large;color: white; ">Interview<span
+                        style="font-size:x-large;color: #ff6f0f;">.help</span></h1></a>
+            </div>
+            <div class="bar">
+                <nav id="navbar" class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="Section">HOME</a></li>
+                        <li><a href="members.html" class="Section">MEMBERS</a></li>
+                        <li><a href="resources.html" class="Section">RESOURCES</a></li>
+                        <li><a href="contact.html" class="Section">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="gap"></div>
+
+        <div class="member-page">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'jogi')"  id="defaultOpen">Kolli Jogi Naidu</button>
+                <button class="tablinks" onclick="openTab(event, 'deep')">Aakash Deep</button>
+                <button class="tablinks" onclick="openTab(event, 'pranav')">Pranav Krishna Kadam</button>
+                <button class="tablinks" onclick="openTab(event, 'prashant')">Prashant Shekhar</button>
+            </div>
+
+            <div class="info-page">
+                <div id="jogi" class="tabcontent">
+                    <img src="Jogi-pic.jpeg" width="175px" height="175px" />
+
+                    <div class="info">
+                        <h2 style="padding-left:25px">Kolli Jogi Naidu</h2>
+                        <h3 style="padding-left:65px">B190605CS</h3>
+                        <p style="font-size: 20px;">Email: <a href="mailto:joginaidu_b190605cs@nitc.ac.in">joginaidu_b190605@nitc.ac.in</a>
+                        </p>
+                    </div>
+
+                    <embed class="resume" src="Jogi-Resume.pdf" />
+                </div>
+
+                <div id="prashant" class="tabcontent">
+                    <img src="Prashant-pic.jpeg" width="175px" height="175px" />
+
+                    <div class="info">
+                        <h2 style="padding-left:25px">Prashant Shekhar</h2>
+                        <h3 style="padding-left:65px">B190474CS</h3>
+                        <p style="font-size: 20px;">Email : <a href="mailto:prashant_b1903474cs@nitc.ac.in">prashant_b190474cs@nitc.ac.in</a>
+                        </p>
+                    </div>
+
+                    <embed src="Prashant-Resume.pdf" class="resume" />
+                </div>
+
+                <div id="deep" class="tabcontent">
+                    <img src="AAKASH DEEP-pic.jpeg" width="175px" height="175px" />
+
+                    <div class="info">
+                        <h2 style="padding-left:40px">Aakash Deep</h2>
+                        <h3 style="padding-left:65px">B190353CS</h3>
+                        <p style="font-size: 20px;">Email : <a href="mailto:aakash_b190353cs@nitc.ac.in">aakash_b190353cs@nitc.ac.in</a>
+                        </p>
+                    </div>
+
+                    <embed class="resume" src="Aakash-Resume.pdf" />
+                </div>
+
+                <div id="pranav" class="tabcontent">
+                    <img src="Pranav-pic.jpg" width="175px" height="175px" />
+
+                    <div class="info">
+                        <h2 style="padding-left:25px">Pranav Krishna Kadam</h2>
+                        <h3 style="padding-left:65px">B190437CS</h3>
+                        <p style="font-size: 20px;">Email : <a href="mailto:pranav_b190437cs@nitc.ac.in">pranav_b190437cs@nitc.ac.in</a>
+                        </p>
+                    </div>
+
+                    <embed class="resume" src="Pranav-Resume.pdf" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>

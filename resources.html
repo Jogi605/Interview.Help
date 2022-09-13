@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <title>Resources-page</title>
+    <style>
+        body{
+            font-family: Georgia, serif;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            width: 99%;
+            height: 100%;
+        }
+        html{
+            margin: 0!important;
+            padding: 0!important;
+        }
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            float: right;
+            top: 0;
+            left: 0;
+            width: 60%;
+            margin-right: 0%;
+            padding-top: 5px;
+            box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+            z-index: 10;
+        }
+
+        li:hover
+        {
+            background-color: #ff6f0f;
+            color: #181719;
+        }
+       .nav-list{
+            
+           display: flex;
+           
+        } 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden;   */
+        }
+        li{
+            float: left; 
+        }
+
+        li a {
+            display: block;
+            color: white;
+            font-style: bold;
+            text-align: center;
+            
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .bar{
+            flex: 60%;
+            background-color: rgb(0, 7, 7);
+            width: 60%;
+            box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+            z-index: 10;
+            float: right;
+        }
+        .logo{
+            flex: 40%;
+            padding-left: 4%;
+            background-color: rgb(0, 7, 7);
+            width: 35%;
+            box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+            z-index: 10;
+            /* float: right;  */
+        }
+       
+        .header{
+            display: flex;
+        }
+        .btn{
+            display: block;
+            border-radius: 5%;
+            font-size: large;
+            /* border-color: white; */
+            margin-top: 30px;
+            margin: auto;
+            padding: 5px 5px;
+            color: #ff6f0f;
+            /* cursor: pointer; */
+            background-color: rgba(0,100,100,0.01);
+            
+        }
+        
+        .title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid white;
+            width: 50%;
+            text-align: center;
+            height: 50vh;
+            color: white;
+            border-collapse: separate;
+            
+        }
+        .gap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+        .Section:hover{
+            background-color: #ff6f0f;
+        }
+        .background-image {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: block;
+            background-image: url('bb1.jpg');
+            width: 100%;
+            height: 100%;
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+        .content {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 98%;
+            background-color:rgba(0, 29, 35, 0.8);
+        }
+    </style>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body >
+        <div class="background-image"></div>
+        <div class="content">
+        <div class="header">
+        <div class="logo"><a href="index.html" style="color:#000000"><h1 style="font-size:x-large;color: white; ">Interview<span style="font-size:x-large;color: #ff6f0f;">.help</span></h1></a></div>
+        <div class="bar">
+                <nav id="navbar" class="nav">
+                <ul class="nav-list">
+                <li><a href="index.html" class="Section">HOME</a></li>
+                <li><a href="members.html" class="Section">MEMBERS</a></li>
+                <li><a href="resources.html" class="Section">RESOURCES</a></li>
+                <li><a href="contact.html" class="Section">CONTACT</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    <div class="gap"></div>
+               <section class="title">
+                <h1 style="font-size: 30px;">Coming Soon...</h1>
+               </section>
+               
+        
+    </div>
+
+    </body>
+</html>
