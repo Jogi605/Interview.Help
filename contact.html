@@ -82,7 +82,9 @@
 
     .header {
         display: flex;
+        width: 100%;
     }
+
 
     .btn {
         display: block;
@@ -143,7 +145,7 @@
     }
 
 
-    
+
     .content {
         position: fixed;
         left: 0;
@@ -182,17 +184,24 @@
     .info-wrap {
         /* background-color: rgba(0, 29, 35, 0.8); */
         border: 1px solid #ffffff;
-        width: 45%;
+        max-width: 800px;
         color: white;
         font-size: large;
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-box
     {
         padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: left; */
     }
     .phone-box img{
         size: 1px;
@@ -249,7 +258,7 @@
                     Room No: 260, E-Hostel, National Institute of
                     Technology, Calicut-673601
                 </object>
-                <div></div>
+                <!-- <div></div> -->
                 <object class="phone-box">
                     <span class="fa fa-phone"></span>
                     <!-- <img class="icon" src="telephone.png"> -->

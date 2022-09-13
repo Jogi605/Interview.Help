@@ -82,6 +82,7 @@
 
     .header {
         display: flex;
+        width: 100%;
     }
 
     .btn {
@@ -106,12 +107,12 @@
         margin-left: auto;
         margin-right: auto;
         border: 1px solid white;
-        width: 50%;
+        max-width: 800px;
         text-align: center;
         height: 50vh;
         color: white;
-        
-
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .gap {
@@ -127,7 +128,7 @@
     }
 
     .learn{
-        padding-top: 100px;
+        align-self: flex-start;
     }
     .background-image {
         position: fixed;
@@ -152,8 +153,12 @@
         z-index: 9999;
         margin-left: 10px;
         margin-right: 10px;
-        height: 98%;
+        height: 100%;
         background-color: rgba(0, 29, 35, 0.8);
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items:center;
+        justify-items: center;
     }
 </style>
 
@@ -163,25 +168,26 @@
 
 <body>
     <div class="background-image"></div>
-    <div class="content">
-        <div class="header">
-            <div class="logo">
-                <a href="index.html" style="color:#000000">
-                <h1 style="font-size:x-large;color: white; ">Interview<span
-                        style="font-size:x-large;color: #ff6f0f;">.help</span></h1></a>
-            </div>
-            <div class="bar">
-                <nav id="navbar" class="nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="Section">HOME</a></li>
-                        <li><a href="members.html" class="Section">MEMBERS</a></li>
-                        <li><a href="resources.html" class="Section">RESOURCES</a></li>
-                        <li><a href="contact.html" class="Section">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" style="color:#000000">
+            <h1 style="font-size:x-large;color: white; ">Interview<span
+                    style="font-size:x-large;color: #ff6f0f;">.help</span></h1></a>
         </div>
-        <div class="gap"></div>
+        <div class="bar">
+            <nav id="navbar" class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="Section">HOME</a></li>
+                    <li><a href="members.html" class="Section">MEMBERS</a></li>
+                    <li><a href="resources.html" class="Section">RESOURCES</a></li>
+                    <li><a href="contact.html" class="Section">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        
+        <!-- <div class="gap"></div> -->
         <section class="title">
             <h1 style="font-size:60px;color: white; ">Interview<span
                     style="font-size:60px;color: #ff6f0f;">.help</span></h1>
